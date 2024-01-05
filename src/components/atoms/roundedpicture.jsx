@@ -5,7 +5,12 @@ import './roundedpicture.scss';
 const RoundedImage = (props) => {
     return (
         <div>
-            <img src={props.src} alt={props.alt} className="rounded"></img>
+            <img
+                src={props.src}
+                alt={props.alt}
+                height={props.height}
+                className="rounded"
+            ></img>
         </div>
     );
 };
@@ -13,6 +18,13 @@ const RoundedImage = (props) => {
 RoundedImage.propTypes = {
     src: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
+    height: PropTypes.number,
+};
+
+RoundedImage.defaultProps = {
+    src: '',
+    alt: '',
+    height: 223,
 };
 
 export default RoundedImage;

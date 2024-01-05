@@ -1,13 +1,9 @@
 import React from 'react';
-import RoundedImage from '../components/atoms/roundedpicture';
+import './home.scss';
 
 const Home = () => {
     return (
-        <div>
-            <RoundedImage
-                src="/src/assets/images/homepage-title-bg.png"
-                alt="paysage"
-            />
+        <div className="catch">
             <h1>Chez vous, partout et ailleurs</h1>
         </div>
     );

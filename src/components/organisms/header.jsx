@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './header.scss';
+import logo from '../../assets/images/LOGO.svg';
+import NavBar from '../molecules/navbar';
 
 const Header = () => {
     return (
-        <div>
-            <nav>
-                <Link to="/">Accueil</Link>
-                <Link to="/about">A Propos</Link>
-            </nav>
+        <div className="header">
+            <img src={logo} alt="logo Kasa"></img>
+            <NavBar />
         </div>
     );
 };
