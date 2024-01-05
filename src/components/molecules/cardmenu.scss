@@ -1,0 +1,13 @@
+.cardmenu {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 50px;
+    margin-top: 42px;
+    margin-bottom: 50px;
+    padding: 56px;
+    background: #f6f6f6;
+    border-radius: 25px;
+}
