@@ -9,16 +9,16 @@ import ErrorPage from './pages/404';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route exact path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/logements/:id' element={<Logements/>}/>
-        <Route path='*' element={<ErrorPage/>}/>
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/logements/:id" element={<Logements />} />
+                <Route path="*" element={<ErrorPage />} />
+            </Routes>
+        </BrowserRouter>
+    </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
