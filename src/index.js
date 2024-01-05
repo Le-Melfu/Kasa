@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals.js';
 import Home from './pages/home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './pages/about';
 import Logements from './pages/logements';
 import ErrorPage from './pages/404';
+import Header from './components/organisms/header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
     <React.StrictMode>
         <BrowserRouter>
+            <Header />
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
