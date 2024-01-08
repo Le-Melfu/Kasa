@@ -1,11 +1,13 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ErrorPage = () => {
     return (
-        
-        <h1>Error 404 not Found</h1>
-        
-    )
+        <div>
+            <h1>Error 404 not Found</h1>
+            <Link to="/">Retourner sur la page d&apos;accueil</Link>
+        </div>
+    );
 };
 
 export default ErrorPage;

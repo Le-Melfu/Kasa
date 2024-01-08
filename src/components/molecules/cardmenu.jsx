@@ -1,16 +1,22 @@
 import React from 'react';
 import Card from '../atoms/card';
 import './cardmenu.scss';
+import logements from '../../data/logements.json';
 
 const CardMenu = () => {
     return (
         <div className="cardmenu">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {logements.map((logement) => {
+                return (
+                    <Card
+                        key={`${logement.id}+${logement.title}`}
+                        id={logement.id}
+                        title={logement.title}
+                        cover={logement.cover}
+                    />
+                );
+            })}
+            ;
         </div>
     );
 };

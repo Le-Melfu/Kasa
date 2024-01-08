@@ -8,6 +8,7 @@ import About from './pages/about';
 import Logements from './pages/logements';
 import ErrorPage from './pages/404';
 import Header from './components/organisms/header';
+import Footer from './components/organisms/footer.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -21,6 +22,7 @@ root.render(
                 <Route path="/logements/:id" element={<Logements />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     </React.StrictMode>,
 );

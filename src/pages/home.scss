@@ -4,11 +4,14 @@
     flex-direction: column;
 }
 .catch {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 223px;
+    margin: 0% 5%;
+    padding: 20px;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.3);
     background: {

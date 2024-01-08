@@ -1,5 +1,7 @@
 body {
-    padding: 0 100px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
