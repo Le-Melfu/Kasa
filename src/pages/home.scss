@@ -3,28 +3,3 @@
     display: flex;
     flex-direction: column;
 }
-.catch {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 223px;
-    margin: 0% 5%;
-    padding: 20px;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.3);
-    background: {
-        image: url('../assets/images/homepage-title-bg.png');
-        position: center center;
-        size: cover;
-        repeat: no-repeat;
-    }
-    background-blend-mode: multiply;
-    h1 {
-        color: white;
-        font-family: 'Montserrat';
-        font-weight: 500;
-        font-size: 48px;
-    }
-}

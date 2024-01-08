@@ -1,0 +1,30 @@
+.errorpage {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    flex-grow: 1;
+    color: #ff6060;
+    font-family: Montserrat;
+    margin: 0;
+    h1 {
+        display: flex;
+        font-size: 288px;
+        font-weight: 700;
+        margin-bottom: 139px;
+    }
+    p {
+        display: flex;
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 139px;
+    }
+    a {
+        display: flex;
+        color: #ff6060;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 139px;
+    }
+}

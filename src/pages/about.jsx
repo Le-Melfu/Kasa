@@ -1,7 +1,16 @@
 import React from 'react';
+import './about.scss';
+import aboutBanner from '../assets/images/about-banner.jpg';
+import Banner from '../components/atoms/banner';
+import Dropdownabout from '../components/organisms/dropdownlistabout';
 
 const About = () => {
-    return <h1>About</h1>;
+    return (
+        <div className="about">
+            <Banner image={aboutBanner} />
+            <Dropdownabout />
+        </div>
+    );
 };
 
 export default About;
