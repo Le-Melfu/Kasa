@@ -5,26 +5,30 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 const Dropdown = (props) => {
     const [isOpen, setIsOpen] = useState(false);
-    return isOpen ? (
-        <div className="dropdown" onClick={() => setIsOpen(false)}>
+    return (
+        <div
+            className="dropdown"
+            onClick={isOpen ? () => setIsOpen(false) : () => setIsOpen(true)}
+        >
             <h2>
                 {props.title}
-                <IoIosArrowDown />
+                {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </h2>
-        </div>
-    ) : (
-        <div className="dropdown" onClick={() => setIsOpen(true)}>
-            <h2>
-                {props.title}
-                <IoIosArrowUp />
-            </h2>
-            <p className="droped">{props.content}</p>
+            <div className="dropdown__content">
+                {isOpen ? (
+                    <p className="dropdown__content--uncollapsed">
+                        {props.content}
+                    </p>
+                ) : (
+                    ''
+                )}
+            </div>
         </div>
     );
 };
 
 Dropdown.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     content: PropTypes.string,
 };
 export default Dropdown;

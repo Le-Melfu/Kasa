@@ -1,6 +1,5 @@
 import React from 'react';
 import './dropdownlistabout.scss';
-import PropTypes from 'prop-types';
 import Dropdown from '../molecules/dropdown';
 
 const Dropdownabout = () => {
@@ -26,7 +25,4 @@ const Dropdownabout = () => {
     );
 };
 
-Dropdownabout.propTypes = {
-    title: PropTypes.string.isRequired,
-};
 export default Dropdownabout;
