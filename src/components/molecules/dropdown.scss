@@ -43,14 +43,14 @@
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 400;
-        transition: max-height 500ms ease-in-out;
+        --webkit-transition: max-height 500ms ease-in-out;
         transform-origin: top;
         max-height: 0;
         & > * {
             padding: 20px;
             transform: translateY(-150px);
-            --webkit-transition: transform 300ms ease-in-out;
-            transition-delay: 200ms;
+            transition: transform 300ms ease-in-out;
+            transition-delay: 150ms;
         }
     }
     .arrow {
