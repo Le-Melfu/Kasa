@@ -43,7 +43,7 @@
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 400;
-        --webkit-transition: max-height 500ms ease-in-out;
+        transition: max-height 500ms ease-in-out;
         transform-origin: top;
         max-height: 0;
         & > * {
@@ -54,7 +54,7 @@
         }
     }
     .arrow {
-        --webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
     }
     .rotate {
         transform: rotate(-180deg);
