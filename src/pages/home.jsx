@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.scss';
 import CardMenu from '../components/molecules/cardmenu';
-import Banner from '../components/atoms/banner';
+import Banner from '../components/molecules//banner';
 import homeBanner from '../assets/images/homepage-title-bg.png';
 
 const Home = () => {

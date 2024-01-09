@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../atoms/card';
+import Card from '../molecules/card';
 import './cardmenu.scss';
 import logements from '../../data/logements.json';
 

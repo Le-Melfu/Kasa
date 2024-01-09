@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.scss';
 import aboutBanner from '../assets/images/about-banner.jpg';
-import Banner from '../components/atoms/banner';
+import Banner from '../components/molecules//banner';
 import Dropdownabout from '../components/organisms/dropdownlistabout';
 
 const About = () => {

@@ -1,12 +1,12 @@
 import React from 'react';
 import './header.scss';
-import logo from '../../assets/images/LOGO.svg';
 import NavBar from '../molecules/navbar';
+import Logo from '../atoms/logo';
 
 const Header = () => {
     return (
         <div className="header">
-            <img src={logo} alt="logo Kasa"></img>
+            <Logo />
             <NavBar />
         </div>
     );
