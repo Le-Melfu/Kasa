@@ -1,3 +1,5 @@
+@import '../../assets/variables';
+
 .cardmenu {
     box-sizing: border-box;
     display: grid;
@@ -6,6 +8,6 @@
     row-gap: 50px;
     margin: 42px 100px 50px 100px;
     padding: 56px;
-    background: #f6f6f6;
+    background: $main-bg-color;
     border-radius: 25px;
 }

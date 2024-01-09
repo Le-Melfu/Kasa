@@ -5,7 +5,6 @@ import './logements.scss';
 
 const Logements = () => {
     const { id } = useParams();
-    console.log(id);
     return (
         <div className="logements">
             <carousel></carousel>

@@ -1,10 +1,10 @@
-@import '../../assets/fonts/fonts';
+@import '../../assets/fonts/fonts', '../../assets/variables';
 .navbar {
     display: flex;
     flex-direction: row;
     .link {
         font-family: 'Montserrat';
-        color: #ff6060;
+        color: $primary-color;
         text-align: right;
         font-family: Montserrat;
         font-size: 24px;
