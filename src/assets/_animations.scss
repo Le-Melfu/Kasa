@@ -6,3 +6,14 @@
         max-height: 500px;
     }
 }
+
+@keyframes anim-dropdown-content {
+    0% {
+        transform-origin: top;
+        transform: translateY(-150px);
+    }
+    100% {
+        transform-origin: top;
+        transform: translateY(0);
+    }
+}

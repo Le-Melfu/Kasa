@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './dropdown.scss';
 import PropTypes from 'prop-types';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { IoIosArrowUp } from 'react-icons/io';
 
 const Dropdown = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,16 +12,18 @@ const Dropdown = (props) => {
         >
             <h2>
                 {props.title}
-                {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
-            </h2>
-            <div className="dropdown__content">
                 {isOpen ? (
-                    <p className="dropdown__content--uncollapsed">
-                        {props.content}
-                    </p>
+                    <IoIosArrowUp className="arrow" />
                 ) : (
-                    ''
+                    <IoIosArrowUp className="arrow rotate" />
                 )}
+            </h2>
+            <div
+                className={
+                    isOpen ? 'dropdown__content open' : 'dropdown__content'
+                }
+            >
+                <p>{props.content}</p>
             </div>
         </div>
     );
