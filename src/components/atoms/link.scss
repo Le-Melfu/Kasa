@@ -1,0 +1,9 @@
+@import '../../assets/variables', '../../assets/mixin';
+.link {
+    @include navlink;
+    text-decoration: none;
+    &__active {
+        @include navlink;
+        text-decoration: underline;
+    }
+}

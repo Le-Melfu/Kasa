@@ -1,4 +1,5 @@
-@import '../../assets/_variables';
+@import '../../assets/variables';
+
 .card {
     position: relative;
     box-sizing: border-box;
@@ -22,7 +23,7 @@
         left: 20px;
         width: 50%;
         color: #fff;
-        font-family: Montserrat;
+        font-family: $main-font;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;

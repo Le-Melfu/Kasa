@@ -1,16 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../atoms/link';
 import './navbar.scss';
 
 const NavBar = () => {
     return (
         <nav className="navbar">
-            <Link to="/" className="link">
-                Accueil
-            </Link>
-            <Link to="/about" className="link">
-                A Propos
-            </Link>
+            <Link to="/" name="Accueil" className="link" />
+            <Link to="/about" name="À Propos" className="link" />
         </nav>
     );
 };

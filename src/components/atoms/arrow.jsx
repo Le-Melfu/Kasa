@@ -4,9 +4,15 @@ import './arrow.scss';
 import PropTypes from 'prop-types';
 
 const Arrow = (props) => {
-    const className = props.open ? 'arrow rotate' : 'arrow';
+    const animOpen = props.open ? 'arrow rotateDown' : 'arrow';
+    const rotationLOR =
+        props.direction === 'left'
+            ? 'rotateLeft'
+            : props.direction === 'right'
+              ? 'rotateRight'
+              : '';
     return (
-        <div className={className}>
+        <div className={`${animOpen} ${rotationLOR}`}>
             <img src={arrow} alt="arrow" />
         </div>
     );
@@ -14,9 +20,11 @@ const Arrow = (props) => {
 
 Arrow.propTypes = {
     open: PropTypes.boolean,
+    direction: PropTypes.string,
 };
 
 Arrow.defaultProps = {
     open: false,
+    direction: '',
 };
 export default Arrow;

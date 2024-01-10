@@ -1,13 +1,16 @@
 import React from 'react';
 import Dropdown from '../molecules/dropdown';
+import './fiche-logement.scss';
 
-const Logements = () => {
+const FicheLogements = () => {
     return (
-        <div>
-            <Dropdown content="description" />
-            <Dropdown content="equipements" />
+        <div className="fiche-logement">
+            <div className="dropdown-section">
+                <Dropdown title="description" />
+                <Dropdown title="equipements" />
+            </div>
         </div>
     );
 };
 
-export default Logements;
+export default FicheLogements;

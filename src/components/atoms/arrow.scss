@@ -1,6 +1,12 @@
 .arrow {
     transition: all 300ms ease-in-out;
 }
-.rotate {
+.rotateDown {
     transform: rotate(-180deg);
+}
+.rotateLeft {
+    transform: rotate(-90deg);
+}
+.rotateRight {
+    transform: rotate(90deg);
 }

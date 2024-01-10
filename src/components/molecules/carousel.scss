@@ -1,0 +1,30 @@
+@import '../../assets/variables';
+
+.carousel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: $main-bg-color;
+    &__picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 415px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .rotateLeft {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+    }
+    .rotateRight {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+    }
+}
