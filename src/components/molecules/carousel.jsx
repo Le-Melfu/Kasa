@@ -1,25 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './carousel.scss';
-import Arrow from '../atoms/arrow';
+import Slideshow from './slideshow';
 
 const Carousel = (props) => {
     if (props.content instanceof Array) {
         return (
             <div className="carousel">
-                <Arrow direction="left" />
-                <div className="carousel__picture">
-                    {props.content.map((content) => {
-                        return <img key={content} src={content} alt="" />;
-                    })}
-                </div>
-                <Arrow direction="right" />
+                <Slideshow content={props.content} alt={props.alt} />
             </div>
         );
     } else {
         return (
             <div className="carousel__picture">
-                <img src={props.content} alt="" />
+                <img src={props.content} alt={props.alt} />
             </div>
         );
     }
@@ -27,6 +21,7 @@ const Carousel = (props) => {
 
 Carousel.propTypes = {
     content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+    alt: PropTypes.string.isRequired,
 };
 
 export default Carousel;

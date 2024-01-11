@@ -22,3 +22,10 @@ body,
 * {
     box-sizing: border-box;
 }
+
+.rotateLeft {
+    transform: rotate(-90deg);
+}
+.rotateRight {
+    transform: rotate(90deg);
+}

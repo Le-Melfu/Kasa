@@ -5,26 +5,19 @@ import PropTypes from 'prop-types';
 
 const Arrow = (props) => {
     const animOpen = props.open ? 'arrow rotateDown' : 'arrow';
-    const rotationLOR =
-        props.direction === 'left'
-            ? 'rotateLeft'
-            : props.direction === 'right'
-              ? 'rotateRight'
-              : '';
+
     return (
-        <div className={`${animOpen} ${rotationLOR}`}>
+        <div className={`${animOpen}`}>
             <img src={arrow} alt="arrow" />
         </div>
     );
 };
 
 Arrow.propTypes = {
-    open: PropTypes.boolean,
-    direction: PropTypes.string,
+    open: PropTypes.bool,
 };
 
 Arrow.defaultProps = {
     open: false,
-    direction: '',
 };
 export default Arrow;
