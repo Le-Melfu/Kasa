@@ -12,7 +12,7 @@ const Carousel = (props) => {
         );
     } else {
         return (
-            <div className="carousel__picture">
+            <div className="carousel">
                 <img src={props.content} alt={props.alt} />
             </div>
         );

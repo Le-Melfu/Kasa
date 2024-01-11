@@ -1,0 +1,15 @@
+@import '../../assets/variables';
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: $primary-color;
+    min-width: 115px;
+    height: 25px;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}

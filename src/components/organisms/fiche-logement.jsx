@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Dropdown from '../molecules/dropdown';
 import './fiche-logement.scss';
 import OwnerProfile from '../molecules/owner-profile';
+import TagSection from '../molecules/tag-section';
 
 const FicheLogements = (props) => {
     return (
@@ -13,6 +14,9 @@ const FicheLogements = (props) => {
                     <p>{props.logement.location}</p>
                 </div>
                 <OwnerProfile host={props.logement.host} />
+            </div>
+            <div className="fiche-logement__infos">
+                <TagSection content={props.logement.tags} />
             </div>
             <div className="dropdown-section">
                 <Dropdown

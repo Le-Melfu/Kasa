@@ -18,10 +18,12 @@ body,
 }
 
 .main-container {
+    box-sizing: border-box;
     display: flex;
-    justify-self: center;
-    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1440px;
     flex-grow: 1;
+    padding: 0 100px;
     width: 100%;
-    max-width: 1240px;
 }

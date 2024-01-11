@@ -14,14 +14,21 @@
         align-items: center;
         width: 100%;
         margin-bottom: 20px;
-        h1 {
+        h2 {
             font-size: 36px;
             font-weight: 500;
+            line-height: 142.6%;
         }
         p {
             font-size: 18px;
             font-weight: 500;
         }
+    }
+    &__infos {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 24px;
     }
 }
 
@@ -29,7 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 10%;
+    gap: 6%;
     width: 100%;
     height: auto;
     flex-direction: row;
