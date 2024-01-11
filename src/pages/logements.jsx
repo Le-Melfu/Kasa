@@ -11,12 +11,11 @@ const Logements = () => {
 
     return (
         <div className="logement">
-            <p></p>
             <Carousel
                 content={selectedLogement.pictures}
                 alt={selectedLogement.title}
             />
-            <FicheLogements />
+            <FicheLogements logement={selectedLogement} />
         </div>
     );
 };

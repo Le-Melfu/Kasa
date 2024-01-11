@@ -4,7 +4,7 @@ import './carousel.scss';
 import Slideshow from './slideshow';
 
 const Carousel = (props) => {
-    if (props.content instanceof Array) {
+    if (props.content.length > 1) {
         return (
             <div className="carousel">
                 <Slideshow content={props.content} alt={props.alt} />

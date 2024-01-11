@@ -2,27 +2,34 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Dropdown from '../molecules/dropdown';
 import './fiche-logement.scss';
+import OwnerProfile from '../molecules/owner-profile';
 
 const FicheLogements = (props) => {
     return (
         <div className="fiche-logement">
-            <div>
-                <h2>{props.title}</h2>
-                <p>{props.location}</p>
+            <div className="fiche-logement__header">
+                <div>
+                    <h2>{props.logement.title}</h2>
+                    <p>{props.logement.location}</p>
+                </div>
+                <OwnerProfile host={props.logement.host} />
             </div>
             <div className="dropdown-section">
-                <Dropdown title="description" content={props.description} />
-                <Dropdown title="equipements" content={props.equipements} />
+                <Dropdown
+                    title="Description"
+                    content={props.logement.description}
+                />
+                <Dropdown
+                    title="Équipements"
+                    content={props.logement.equipments}
+                />
             </div>
         </div>
     );
 };
 
 FicheLogements.propTypes = {
-    title: PropTypes.string,
-    location: PropTypes.string.isRequired,
-    equipements: PropTypes.array,
-    description: PropTypes.string,
+    logement: PropTypes.object,
 };
 
 export default FicheLogements;

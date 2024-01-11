@@ -1,11 +1,36 @@
+@import '../../assets/variables';
+
 .fiche-logement {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: $main-font;
+    color: $primary-color;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        h1 {
+            font-size: 36px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
 }
 
 .dropdown-section {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10%;
     width: 100%;
+    height: auto;
     flex-direction: row;
 }

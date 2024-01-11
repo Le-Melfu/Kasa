@@ -16,12 +16,15 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Header />
-            <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/logements/:id" element={<Logements />} />
-                <Route path="*" element={<ErrorPage />} />
-            </Routes>
+            <div className="main-container">
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/logements/:id" element={<Logements />} />
+                    <Route path="*" element={<ErrorPage />} />
+                </Routes>
+            </div>
+
             <Footer />
         </BrowserRouter>
     </React.StrictMode>,

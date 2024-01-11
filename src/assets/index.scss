@@ -11,21 +11,17 @@ body,
     align-items: center;
 }
 
-#root {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-}
-
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.rotateLeft {
-    transform: rotate(-90deg);
-}
-.rotateRight {
-    transform: rotate(90deg);
+.main-container {
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 1240px;
 }

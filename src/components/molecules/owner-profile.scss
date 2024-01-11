@@ -1,0 +1,26 @@
+@import '../../assets/variables';
+
+.owner-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    p {
+        display: flex;
+        flex-wrap: wrap;
+        width: min-content;
+        height: auto;
+        margin-right: 10px;
+        color: $primary-color;
+        text-align: right;
+        font-family: $main-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+    }
+}
