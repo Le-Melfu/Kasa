@@ -4,6 +4,7 @@ import Dropdown from '../molecules/dropdown';
 import './fiche-logement.scss';
 import OwnerProfile from '../molecules/owner-profile';
 import TagSection from '../molecules/tag-section';
+import StarRating from '../molecules/starrating';
 
 const FicheLogements = (props) => {
     return (
@@ -17,6 +18,7 @@ const FicheLogements = (props) => {
             </div>
             <div className="fiche-logement__infos">
                 <TagSection content={props.logement.tags} />
+                <StarRating rating={props.logement.rating} />
             </div>
             <div className="dropdown-section">
                 <Dropdown

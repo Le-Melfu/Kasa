@@ -35,7 +35,11 @@ const Slideshow = (props) => {
                             className={
                                 index === currentSlide
                                     ? 'slideshow__picture--selected'
-                                    : 'slideshow__picture'
+                                    : index === currentSlide - 1
+                                      ? 'slideshow__picture--selected prevSlide'
+                                      : index === currentSlide + 1
+                                        ? 'slideshow__picture-selected nextSlide'
+                                        : 'slideshow__picture'
                             }
                         />
                     );

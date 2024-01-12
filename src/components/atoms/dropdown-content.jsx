@@ -6,9 +6,9 @@ const DDContent = (props) => {
     if (props.content instanceof Array) {
         return (
             <ul className="dropdown-content">
-                {props.content.map((content) => {
+                {props.content.map((content, index) => {
                     return (
-                        <li className="dropdown-content__list" key={content}>
+                        <li className="dropdown-content__list" key={index}>
                             {content}
                         </li>
                     );

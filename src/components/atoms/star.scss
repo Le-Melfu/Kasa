@@ -1,0 +1,11 @@
+@import '../../assets/variables';
+
+.star {
+    margin-left: 5px;
+    &--filled {
+        color: $primary-color;
+    }
+    &--greyed {
+        filter: saturate(0) brightness(1.8);
+    }
+}

@@ -17,12 +17,16 @@
     &__picture {
         display: none;
         width: 100%;
+        object-fit: cover;
+        min-height: 415px;
 
         &--selected {
             display: flex;
+            justify-content: center;
             width: 100%;
-            min-height: 415px;
             object-fit: cover;
+            transform: translateX(0);
+            transition: all 500ms ease-in-out;
         }
     }
     &__listnumber {
@@ -33,6 +37,13 @@
         font-size: 18px;
         font-weight: 500;
     }
+}
+
+.nextSlide {
+    transform: translateX(100%);
+}
+.prevSlide {
+    transform: translateX(-100%);
 }
 
 .arrow {
