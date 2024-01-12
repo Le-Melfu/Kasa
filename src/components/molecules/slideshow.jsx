@@ -6,7 +6,6 @@ import slideshowArrow from '../../assets/icons/slideshow-arrow.svg';
 
 const Slideshow = (props) => {
     const [currentSlide, setCurrentSlide] = useState(0);
-
     const nextSlide = () => {
         setCurrentSlide((prevSlide) => (prevSlide + 1) % props.content.length);
     };
@@ -34,12 +33,8 @@ const Slideshow = (props) => {
                             alt={`${props.alt} ${index + 1}`}
                             className={
                                 index === currentSlide
-                                    ? 'slideshow__picture--selected'
-                                    : index === currentSlide - 1
-                                      ? 'slideshow__picture--selected prevSlide'
-                                      : index === currentSlide + 1
-                                        ? 'slideshow__picture-selected nextSlide'
-                                        : 'slideshow__picture'
+                                    ? 'slideshow__picture selected'
+                                    : 'slideshow__picture'
                             }
                         />
                     );

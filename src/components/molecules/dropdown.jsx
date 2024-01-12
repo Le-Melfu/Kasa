@@ -28,6 +28,6 @@ const Dropdown = (props) => {
 
 Dropdown.propTypes = {
     title: PropTypes.string,
-    content: PropTypes.string,
+    content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };
 export default Dropdown;

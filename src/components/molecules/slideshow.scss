@@ -15,19 +15,14 @@
         background-color: $main-bg-color;
     }
     &__picture {
-        display: none;
+        position: absolute;
+        top: calc(50%-height);
+        left: calc(50%-width);
+        display: flex;
         width: 100%;
         object-fit: cover;
-        min-height: 415px;
-
-        &--selected {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            object-fit: cover;
-            transform: translateX(0);
-            transition: all 500ms ease-in-out;
-        }
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
     }
     &__listnumber {
         position: absolute;
@@ -39,11 +34,8 @@
     }
 }
 
-.nextSlide {
-    transform: translateX(100%);
-}
-.prevSlide {
-    transform: translateX(-100%);
+.selected {
+    opacity: 100;
 }
 
 .arrow {
