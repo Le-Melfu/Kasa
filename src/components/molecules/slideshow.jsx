@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './slideshow.scss';
-import '../../assets/index.scss';
 import slideshowArrow from '../../assets/icons/slideshow-arrow.svg';
 
 const Slideshow = (props) => {
