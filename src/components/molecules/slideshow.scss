@@ -1,4 +1,4 @@
-@import '../../assets/variables', '../../assets/animations';
+@import '../../assets/variables';
 
 .slideshow {
     display: flex;
@@ -54,5 +54,18 @@
         z-index: 1;
         top: calc(50%-height);
         right: 10px;
+    }
+}
+
+@media only screen and (max-width: $media-query_mobile) {
+    .arrow {
+        &-left {
+            width: 24px;
+            height: 24px;
+        }
+        &-right {
+            width: 24px;
+            height: 24px;
+        }
     }
 }
