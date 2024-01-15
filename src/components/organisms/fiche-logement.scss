@@ -49,9 +49,10 @@
     width: 100%;
     height: auto;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: $media-query_mobile) {
     .fiche-logement {
         &__header {
             flex-direction: column;
@@ -73,8 +74,5 @@
     .dropdown-section {
         flex-direction: column;
         gap: 0;
-        .dropdown {
-            width: 100%;
-        }
     }
 }

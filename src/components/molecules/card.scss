@@ -31,7 +31,7 @@
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: $media-query_mobile) {
     .card {
         aspect-ratio: 0;
         width: 100%;

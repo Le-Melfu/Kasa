@@ -3,9 +3,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 100%;
     margin: 0;
-    margin-bottom: 30px;
     overflow: hidden;
     font-family: $main-font;
     h2 {
@@ -30,8 +29,9 @@
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: $media-query_mobile) {
     .dropdown {
+        width: 100%;
         h2 {
             font-size: 13px;
             padding: 0 10px;

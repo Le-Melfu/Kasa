@@ -1,9 +1,21 @@
 @import '../../assets/variables', '../../assets/mixin';
 .link {
-    @include navlink;
+    color: $primary-color;
+    text-align: right;
+    text-wrap: nowrap;
+    font-family: $main-font;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 57px;
     text-decoration: none;
-    &__active {
-        @include navlink;
-        text-decoration: underline;
+    @media only screen and (max-width: $media-query_mobile) {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-left: 26px;
     }
+}
+
+.active {
+    text-decoration: underline;
 }

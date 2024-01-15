@@ -1,3 +1,5 @@
+@import './assets/variables';
+
 // Reset CSS
 // Adapté de Eric Meyer's Reset CSS v2.0
 // https://meyerweb.com/eric/tools/css/reset/
@@ -114,6 +116,7 @@ body,
     align-items: center;
     line-height: 1;
     width: 100%;
+    min-height: 100vh;
 }
 
 ol,
@@ -143,14 +146,14 @@ table {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     max-width: 1440px;
-    flex-grow: 1;
+    flex: 1;
     padding: 0 100px;
     width: 100%;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: $media-query_mobile) {
     .main-container {
         padding: 0 20px;
     }

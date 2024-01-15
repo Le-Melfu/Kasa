@@ -25,3 +25,9 @@
         overflow: hidden;
     }
 }
+
+@media only screen and (max-width: $media-query_mobile) {
+    .carousel {
+        height: 335px;
+    }
+}

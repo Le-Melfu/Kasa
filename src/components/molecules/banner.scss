@@ -29,7 +29,7 @@
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: $media-query_mobile) {
     .banner {
         justify-content: flex-start;
         height: 111px;

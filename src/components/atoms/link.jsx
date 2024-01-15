@@ -7,10 +7,10 @@ const Link = (props) => {
     const location = useLocation();
 
     const isActive = (path) => {
-        return location.pathname === path ? '__active' : '';
+        return location.pathname === path ? 'active' : '';
     };
     return (
-        <a href={props.to} className={`link${isActive(props.to)}`}>
+        <a href={props.to} className={`link ${isActive(props.to)}`}>
             {props.name}
         </a>
     );

@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 209px;
     flex-shrink: 1;
     width: 100%;
     padding-top: 66px;
@@ -15,5 +16,22 @@
         filter: brightness(100);
         width: 122px;
         margin-bottom: 28px;
+    }
+    p {
+        text-align: center;
+        font-family: $main-font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+    }
+}
+
+@media only screen and (max-width: $media-query_mobile) {
+    .footer {
+        p {
+            width: 33%;
+            font-size: 12px;
+        }
     }
 }

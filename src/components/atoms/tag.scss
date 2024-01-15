@@ -15,7 +15,7 @@
     font-size: 14px;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: $media-query_mobile) {
     .tag {
         height: 18px;
         font-size: 10px;

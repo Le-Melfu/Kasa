@@ -5,30 +5,43 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex-grow: 1;
+    width: 100%;
     color: $primary-color;
     font-family: $main-font;
-    margin: 0;
+    gap: 139px;
+    margin: 139px 0;
     h1 {
         margin: 0;
         display: flex;
         font-size: 288px;
         font-weight: 700;
-        margin-top: 100px;
-        margin-bottom: 100px;
     }
     p {
         display: flex;
+        text-align: center;
         font-size: 36px;
         font-weight: 500;
-        margin-bottom: 139px;
-        margin-top: 100px;
     }
     a {
         display: flex;
         color: $primary-color;
         font-size: 18px;
         font-weight: 500;
-        margin-bottom: 139px;
+    }
+}
+
+@media only screen and (max-width: $media-query_mobile) {
+    .errorpage {
+        margin: 113px 0;
+        gap: 113px;
+        h1 {
+            font-size: 96px;
+        }
+        p {
+            font-size: 18px;
+        }
+        a {
+            font-size: 14px;
+        }
     }
 }
