@@ -17,6 +17,7 @@
     font-family: $main-font;
     font-size: 18px;
     font-weight: 400;
+    line-height: 142.6%; /* 25.668px */
     transition: max-height 500ms ease-in-out;
     transform-origin: top;
     max-height: 0;
@@ -29,17 +30,23 @@
     ul {
         padding: 20px;
         li {
-            margin-left: 20px;
+            line-height: 142.6%; /* 25.668px */
         }
     }
 }
 
 .open {
-    max-height: 300px;
+    max-height: 3000px;
     p {
         transform: translateY(0);
     }
     ul {
         transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .dropdown__content {
+        font-size: 12px;
     }
 }

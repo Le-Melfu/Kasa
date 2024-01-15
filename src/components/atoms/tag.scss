@@ -12,4 +12,13 @@
     border-radius: 10px;
     margin-right: 10px;
     flex-shrink: 0;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 769px) {
+    .tag {
+        height: 18px;
+        font-size: 10px;
+        min-width: 84px;
+    }
 }

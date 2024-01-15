@@ -4,14 +4,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
+    flex-shrink: 1;
     width: 100%;
     padding-top: 66px;
     padding-bottom: 29px;
     font-family: $main-font;
     background-color: $secondary-color;
     color: white;
-    img {
+    .logo {
         filter: brightness(100);
+        width: 122px;
+        margin-bottom: 28px;
     }
 }

@@ -6,9 +6,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 223px;
-    margin: 0 100px;
     padding: 20px;
     border-radius: 25px;
     background-color: $secondary-color;
@@ -23,7 +22,21 @@
     }
     img {
         position: absolute;
+        top: calc(50%-height);
+        left: 0;
         width: 100%;
         filter: opacity(0.8);
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .banner {
+        justify-content: flex-start;
+        height: 111px;
+        border-radius: 10px;
+        h1 {
+            width: 65%;
+            font-size: 24px;
+        }
     }
 }

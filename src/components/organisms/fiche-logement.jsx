@@ -10,16 +10,19 @@ const FicheLogements = (props) => {
     return (
         <div className="fiche-logement">
             <div className="fiche-logement__header">
-                <div>
-                    <h2>{props.logement.title}</h2>
-                    <p>{props.logement.location}</p>
+                <div className="fiche-logement__title">
+                    <div className="fiche-logement__text">
+                        <h2>{props.logement.title}</h2>
+                        <p>{props.logement.location}</p>
+                    </div>
+                    <TagSection content={props.logement.tags} />
                 </div>
-                <OwnerProfile host={props.logement.host} />
+                <div className="fiche-logement__infos">
+                    <OwnerProfile host={props.logement.host} />
+                    <StarRating rating={props.logement.rating} />
+                </div>
             </div>
-            <div className="fiche-logement__infos">
-                <TagSection content={props.logement.tags} />
-                <StarRating rating={props.logement.rating} />
-            </div>
+
             <div className="dropdown-section">
                 <Dropdown
                     title="Description"

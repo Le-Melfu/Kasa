@@ -1,13 +1,23 @@
 .header {
     box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
-    flex-shrink: 0;
+    flex-shrink: 1;
     width: 100%;
     height: 68px;
     padding: 45px 100px 50px 100px;
     margin-top: 45px;
     margin-bottom: 50px;
-    justify-content: space-between;
-    align-items: center;
+}
+
+@media only screen and (max-width: 769px) {
+    .header {
+        padding: 0 20px;
+        margin: 20px;
+        .logo {
+            width: 145px;
+        }
+    }
 }

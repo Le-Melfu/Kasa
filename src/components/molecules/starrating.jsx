@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './starrating.scss';
 import Star from '../atoms/star';
 
 const StarRating = (props) => {
@@ -12,7 +13,7 @@ const StarRating = (props) => {
     ));
 
     return (
-        <div>
+        <div className="star-rating">
             {starsFilled}
             {starGreyed}
         </div>
