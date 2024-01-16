@@ -1,5 +1,6 @@
 .tag-section {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    flex-wrap: wrap;
+    width: 100%;
 }

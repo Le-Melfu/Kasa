@@ -58,6 +58,11 @@
 }
 
 @media only screen and (max-width: $media-query_mobile) {
+    .slideshow {
+        &__listnumber {
+            display: none;
+        }
+    }
     .arrow {
         &-left {
             width: 24px;
